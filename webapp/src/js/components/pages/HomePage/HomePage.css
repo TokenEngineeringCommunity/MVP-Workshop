@@ -3,6 +3,15 @@ body {
   font-family: Rubik;
   color: #2e384d;
 }
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus,
+.form-control:focus {
+  outline: 0 !important;
+  box-shadow: none;
+}
 h1 {
   font-size: 28px;
   font-weight: 300;
@@ -34,4 +43,15 @@ input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
   box-shadow: none;
+}
+.btn-primary,
+.btn-primary.disabled,
+.btn-primary:disabled {
+  background-color: #429798;
+  border-color: #429798;
+}
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #347071;
+  border-color: #347071;
 }

@@ -192,22 +192,21 @@ class HomePage extends React.Component {
     return (
       <div style={{ width: "100%", height: 300 }}>
         <ResponsiveContainer>
-          <LineChart data={chartData}>
+          <LineChart
+            data={chartData}
+            margin={{
+              top: 20
+            }}
+          >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
-            <YAxis />
+            <YAxis unit="$" />
             <Tooltip />
             <Legend />
-            {/* <Line
-              type="monotone"
-              dataKey="Average electricity price"
-              stroke="#8884d8"
-              activeDot={{ r: 8 }}
-            /> */}
             <Line
               type="monotone"
               dataKey="Electricity price"
-              stroke="#82ca9d"
+              stroke="#429798"
             />
           </LineChart>
         </ResponsiveContainer>
@@ -221,7 +220,10 @@ class HomePage extends React.Component {
     return (
       <RegularLayout>
         <h1 className="mb-4">Homepage</h1>
-        <CardComponent titleText="Price of the kWh (last 24 hours)" className="pb-3">
+        <CardComponent
+          titleText="Price of the kWh (last 24 hours)"
+          className="pb-3"
+        >
           <ConsumptionChart />
         </CardComponent>
         <Row>

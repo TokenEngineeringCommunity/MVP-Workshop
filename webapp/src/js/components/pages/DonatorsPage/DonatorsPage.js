@@ -64,7 +64,7 @@ const allDonators = [
   }
 ];
 
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
+const COLORS = ["#0088FE", "#429798", "#FFBB28", "#FF8042"];
 
 class DonatorsPage extends React.Component {
   constructor(props) {
@@ -83,7 +83,7 @@ class DonatorsPage extends React.Component {
           </Col>
           <Col>{company}</Col>
           <Col>{create_at}</Col>
-          <Col style={{ color: "#38bb8d" }}>
+          <Col style={{ color: "#429798" }}>
             <strong>${invested}</strong>
           </Col>
         </Row>
@@ -99,7 +99,7 @@ class DonatorsPage extends React.Component {
           </Col>
           <Col>{voted} requests</Col>
           <Col>{create_at}</Col>
-          <Col style={{ color: "#38bb8d" }}>
+          <Col style={{ color: "#429798" }}>
             <strong>{tokens} IT</strong>
           </Col>
         </Row>
@@ -129,7 +129,7 @@ class DonatorsPage extends React.Component {
                   dataKey="invested"
                   isAnimationActive={false}
                   data={calculation}
-                  fill="#38bb8d"
+                  fill="#429798"
                   label
                 >
                   {calculation.map((entry, index) => (
