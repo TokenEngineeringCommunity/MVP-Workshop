@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# MVP Workshop team
+## Connect2Evolve | Token Engineering Challenge
 
-## Available Scripts
+Important Links
+- [Presentation](https://docs.google.com/presentation/d/1iW_9ms3abJFhDMRLYhfLonLCMoSFRQE2xm5a80e-TWc/present?#slide=id.p)
+- [Token Modeling Canvas](https://docs.google.com/document/d/1VXCrX8HhSM2f3-EehgPPxeWY33O61-QISRfmCJeneTE/edit?usp=sharing)
+- [UI Dashboard](http://diffusion.mvpworkshop.co)
 
-In the project directory, you can run:
+## Inspiration
+Our inspiration was the purpose and positive impact of the #Connect2Evolve project that aims to use innovative technology and help the people in one of the least developed parts of the words. The chance to come up with a solution that will enable maximal utilization of the necessary equipment that now is available to those people in need is something that has driven us to come up with this solution.
 
-### `npm start`
+## What it does
+Our model explains the flows of value created through energy consumption (information, energy, money) that maximize the usage of the container.
+By donating into STO donor is qualified to receive Impact Tokens based on the ration between his and sum of all donations (the price of the Solarcontainer). This enables a donor to have a transparent overview of the impact his donation will have during the lifecycle of the Solarcontainer.
+Once the container is installed, the energy will start to be producing and that is the moment when the community may be able to take the benefits of it and start purchasing the electricity. Users can prepay for electricity usage by using the FIAT or crypto and once they do that, the paid amount will be converted into the DAI and will be saved as Deposited Funds (see chart).
+The amount of electricity that is used by a specific user is tracked on the Smart Meter. Those data are automatically being sent to the SolarContainer and based on kWh used and price of the kWh (depending on demand/supply) adequate amount of Deposited Funds (DAI) will be sent to the Revenue pool. Revenue pool share will be allocated to the Grant Pool and also shared between the Contractor and Operator.
+In the meantime, while electrical energy will be used and DAI tokens transferred to the Revenue Pool additional process of minting the Impact Token will be happening. Based on the Smart Minter data and kWh that are spent, Impact tokens will be minted and distributed to the users and donators (1 kWh = w IT - impact token). The user that spent the electricity will receive half of the IT tokens, while other tokens will be distributed to the donors, based on the amount of their donation.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How we built it
+We built it starting from our Token Business Model Canvas while continuing developing the token design. After we mapped everything we started designing token model and making assumptions about how the model should function and incentivize all stakeholders.
+In order to test our assumptions, we made cadCAD simulation where we simulated some situations and confirmed our model should work as desired.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Challenges we ran into
+We run into the challenge of incentivization the different stakeholders in the system who have different needs. Ones having to receive a utility token for their service that they are providing to the ecosystem (Constructors & Operators), others willing to pay for the electricity using both crypto and FIAT and the donors who just want to have the transparent way to overview their donations and make sure that they ended at the right place.
 
-### `npm test`
+## Accomplishments that we’re proud of
+We are proud that we design a system that allows:
+-Investors to be able to view the real impact their donation is making, while also allowing them to take part in a voting system
+-Users to purchasers electricity based on the real-time demand/supply and also be able to decide how collected funds will be distributed (spend)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## What we learned
+We learned that it is really important to design a token system in order to work together with people’s daily habits. This way we can make a token system and token model that is totally usable in world use cases.
 
-### `npm run build`
+## What’s next for  MVP
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Fundraising Platform
+- Government Relations
+- Third-Party API integration (expand token simulation models, e.g. weather forecast)
+- Infrastructure & Equipment Installation
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Public Dashboard 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Public Dashboard Home Screen](/screenshots/1_Home.png)
 
-### `npm run eject`
+![Public Dashboard Battery Overview](/screenshots/2_BatteryOverview.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Public Dashboard Electricity Production](/screenshots/3_Production.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Public Dashboard Electricity Consumption](/screenshots/4_Consumption.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Public Dashboard Buy Tokens](/screenshots/5_Buy.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![Public Dashboard Impact Token Overview](/screenshots/6_ImpactToken.png)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
